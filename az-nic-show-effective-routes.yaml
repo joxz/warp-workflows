@@ -1,0 +1,12 @@
+---
+name: Show Azure VM Effective Routes
+description: Show Effective Routes of a NIC
+author: Johannes Denninger
+tags: ["routes", "az"]
+command: "az network nic show-effective-route-table -n {{nic}} -g {{rg}} -o table"
+arguments:
+  - name: nic
+    description: Name of the NIC
+  - name: rg
+    description: VM resource group name
+shells: []

@@ -1,0 +1,10 @@
+---
+name: Change the active subscription
+description: Change the active subscription using name or id
+author: Johannes Denninger
+tags: ["az", "subscription"]
+command: "az account set --subscription {{subscription}}"
+arguments:
+  - name: subscription
+    description: subscription id, e.g. "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" or name, e.g. "MYSUBSCRIPTION01"
+shells: []

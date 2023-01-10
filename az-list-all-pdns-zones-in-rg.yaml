@@ -1,0 +1,10 @@
+---
+name: List all Private DNS Zones in a RG
+description: List all Private DNS Zones in a RG
+author: Johannes Denninger
+tags: ["az", "pdns"]
+command: "az network private-dns zone list -g {{rg}} -o table"
+arguments:
+  - name: rg
+    description: Resource group name
+shells: []

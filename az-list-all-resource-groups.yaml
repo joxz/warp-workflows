@@ -1,0 +1,7 @@
+---
+name: List all resource groups
+description: List all resource groups in the current subscription
+author: Johannes Denninger
+tags: ["az", "subscription", "rg"]
+command: "az group list --output table"
+shells: []

@@ -1,0 +1,7 @@
+---
+name: List all subscriptions and the default subscription
+description: List all subscriptions and the default subscription
+author: Johannes Denninger
+tags: ["az", "subscription"]
+command: "az account list --output table"
+shells: []

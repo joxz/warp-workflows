@@ -1,0 +1,10 @@
+---
+name: List all IPs of VMs in a RG
+description: List all IPs of VMs in a RG
+author: Johannes Denninger
+tags: ["az"]
+command: "az vm list-ip-addresses -g {{rg}} -o table"
+arguments:
+  - name: rg
+    description: Resource group name
+shells: []

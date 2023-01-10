@@ -1,0 +1,18 @@
+---
+name: SSH to Azure Linux VM
+description: SSH connect to an Azure Linux VM using Bastion Native Client
+author: Johannes Denninger
+tags: ["ssh", "az"]
+command: "az network bastion ssh --name {{bastion}} --resource-group {{rg}} --target-resource-id {{resource-id}} --auth-type ssh-key --username {{user}} --ssh-key {{ssh-key}}"
+arguments:
+  - name: bastion
+    description: Name of the Bastion to use
+  - name: rg
+    description: Bastion resource group name
+  - name: resource-id
+    description: Resource-ID of the VM, e.g. "/subscriptions/SUBSCRITIONID/resourceGroups/RGNAME/providers/Microsoft.Compute/virtualMachines/VMNAME"
+  - name: user
+    description: Name of the user
+  - name: ssh-key
+    description: Path to SSH Key file
+shells: []

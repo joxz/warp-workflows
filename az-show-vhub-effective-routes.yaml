@@ -1,0 +1,19 @@
+---
+name: Show Azure Vhub Effective Routes
+description: Show azure Virtual Hub Effective Routes
+author: Johannes Denninger
+tags: ["routes", "az"]
+command: "az network vhub get-effective-routes --resource-type RouteTable --resource-id {{vhub-rt-id}} -g {{rg}} -n {{vhub-name}} --query 'value[].{Prefix:addressPrefixes[0],ASPath:asPath,NextHopType:nextHopType,NextHop:nextHops[0],Origin:routeOrigin}' -o table"
+arguments:
+  - name: vhub-rt-id
+    description: Vhub Route Table ID
+  - name: rg
+    description: Vhub resource group name
+  - name: vhub-name
+    description: Vhub Name
+  - name:
+    description: 
+shells: []
+
+# from: https://blog.cloudtrooper.net/2022/07/14/azure-virtual-wan-hub-routing-preference/
+# ❯ az network vhub get-effective-routes --resource-type RouteTable --resource-id $hub1_default_rt_id -g $rg -n hub1 --query 'value[].{Prefix:addressPrefixes[0],ASPath:asPath,NextHopType:nextHopType,NextHop:nextHops[0],Origin:routeOrigin}' -o table | awk '{ gsub(/\/subscriptions\/'$subscription_id'\/resourceGroups\/'$rg'\/providers\/Microsoft.Network\//,""); print }'
