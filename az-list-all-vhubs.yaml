@@ -1,0 +1,10 @@
+---
+name: List all VWAN Hubs in a RG
+description: List all VWAN Virtual Hubs in a RG
+author: Johannes Denninger
+tags: ["az", "vwan", "vhub"]
+command: "az network vhub list -g {{rg}} -o table"
+arguments:
+  - name: rg
+    description: Resource group name
+shells: []

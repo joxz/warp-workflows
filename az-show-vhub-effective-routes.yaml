@@ -2,7 +2,7 @@
 name: Show Azure Vhub Effective Routes
 description: Show azure Virtual Hub Effective Routes
 author: Johannes Denninger
-tags: ["routes", "az"]
+tags: ["routes", "az", "vwan"]
 command: "az network vhub get-effective-routes --resource-type RouteTable --resource-id {{vhub-rt-id}} -g {{rg}} -n {{vhub-name}} --query 'value[].{Prefix:addressPrefixes[0],ASPath:asPath,NextHopType:nextHopType,NextHop:nextHops[0],Origin:routeOrigin}' -o table"
 arguments:
   - name: vhub-rt-id
