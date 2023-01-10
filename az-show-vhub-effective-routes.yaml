@@ -2,7 +2,9 @@
 name: Show Azure Vhub Effective Routes
 description: Show azure Virtual Hub Effective Routes
 author: Johannes Denninger
-tags: ["routes", "az", "vwan"]
+author_url: "https://github.com/joxz/"
+source_url: "https://github.com/joxz/warp-workflows"
+tags: ["routes", "az", "vwan", "vhub"]
 command: "az network vhub get-effective-routes --resource-type RouteTable --resource-id {{vhub-rt-id}} -g {{rg}} -n {{vhub-name}} --query 'value[].{Prefix:addressPrefixes[0],ASPath:asPath,NextHopType:nextHopType,NextHop:nextHops[0],Origin:routeOrigin}' -o table"
 arguments:
   - name: vhub-rt-id

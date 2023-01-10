@@ -2,6 +2,8 @@
 name: List all resource groups
 description: List all resource groups in the current subscription
 author: Johannes Denninger
+author_url: "https://github.com/joxz/"
+source_url: "https://github.com/joxz/warp-workflows"
 tags: ["az", "subscription", "rg"]
 command: "az group list --output table"
 shells: []

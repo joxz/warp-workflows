@@ -2,6 +2,8 @@
 name: Show Azure VM Effective Routes
 description: Show Effective Routes of a NIC
 author: Johannes Denninger
+author_url: "https://github.com/joxz/"
+source_url: "https://github.com/joxz/warp-workflows"
 tags: ["routes", "az"]
 command: "az network nic show-effective-route-table -n {{nic}} -g {{rg}} -o table"
 arguments:

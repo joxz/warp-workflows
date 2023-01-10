@@ -2,7 +2,9 @@
 name: List all IPs of VMs in a RG
 description: List all IPs of VMs in a RG
 author: Johannes Denninger
-tags: ["az"]
+author_url: "https://github.com/joxz/"
+source_url: "https://github.com/joxz/warp-workflows"
+tags: ["az", "vm"]
 command: "az vm list-ip-addresses -g {{rg}} -o table"
 arguments:
   - name: rg

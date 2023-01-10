@@ -2,6 +2,8 @@
 name: List all subscriptions and the default subscription
 description: List all subscriptions and the default subscription
 author: Johannes Denninger
+author_url: "https://github.com/joxz/"
+source_url: "https://github.com/joxz/warp-workflows"
 tags: ["az", "subscription"]
 command: "az account list --output table"
 shells: []

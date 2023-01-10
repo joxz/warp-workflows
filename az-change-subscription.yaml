@@ -2,6 +2,8 @@
 name: Change the active subscription
 description: Change the active subscription using name or id
 author: Johannes Denninger
+author_url: "https://github.com/joxz/"
+source_url: "https://github.com/joxz/warp-workflows"
 tags: ["az", "subscription"]
 command: "az account set --subscription {{subscription}}"
 arguments:
