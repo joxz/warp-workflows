@@ -1,0 +1,11 @@
+---
+name: List all Vnets in a Subscription
+description: List all Vnets with IP space in a Subscription
+author: Johannes Denninger
+author_url: "https://github.com/joxz/"
+source_url: "https://github.com/joxz/warp-workflows"
+tags: ["az", "vnet"]
+command: "az network vnet list --query \"[].[addressSpace.addressPrefixes[*],name,location,resourceGroup]\" -o table"
+shells: []
+
+# TODO: flatten prefixes array
